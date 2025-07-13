@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" modified="2025-07-11T19:30:24.939Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/13.9.9 Chrome/85.0.4183.121 Electron/10.1.5 Safari/537.36" etag="4_RjBC0nyyp4kr8N-PMB" version="13.9.9" type="device">
+  <diagram id="RpQfL3ZgWklZs10GVeBr" name="Seite-1">
+    <mxGraphModel dx="1086" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d1n5UrgIPRko8gzwZYjQ-1" value="PlaceablePlant : Scriptable Objekt&lt;br&gt;- 3D Asset (Seeds)&lt;br&gt;- 3D Asset (Final)&lt;br&gt;- GrowTime&lt;br&gt;- Costs" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="170" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d1n5UrgIPRko8gzwZYjQ-2" value="Field&lt;br&gt;- Plant?&lt;br&gt;+ PlacePlant(PlaceablePlant)&lt;br&gt;+ IsOccupied" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="160" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d1n5UrgIPRko8gzwZYjQ-4" value="Worker&lt;br&gt;- Target&lt;br&gt;- Action" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d1n5UrgIPRko8gzwZYjQ-5" value="WorkerStation&lt;br&gt;- knows all Plants and their State&lt;br&gt;- Sends Workers" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-1" value="Plant&lt;br&gt;- PlantState&lt;br&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-2" value="PlantState&lt;br&gt;&lt;br&gt;SeedGrow&lt;br&gt;&amp;nbsp;NeedsWater&lt;br&gt;FinalGrow&lt;br&gt;FullyGrown" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="280" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-4" value="UI&lt;br&gt;Available Plants with Costs and maybe &quot;Build Time&quot;&lt;br&gt;Money&lt;br&gt;Hire Workers?" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="105" y="290" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-7" target="S-8L2TnkPDTa_hdI_DOx-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-7" value="Player has enough money" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-8" target="S-8L2TnkPDTa_hdI_DOx-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-8" value="Drag &amp;amp; Drop Plant from Button to Field" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-9" target="S-8L2TnkPDTa_hdI_DOx-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-9" value="Plant starts growing&lt;br&gt;State: SeedGrow" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="420" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-10" value="&lt;font style=&quot;font-size: 9px&quot;&gt;Field.PlacePlant&lt;br&gt;(PlacablePlant)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="435" y="510" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-11" value="&lt;font size=&quot;1&quot;&gt;1 Button pro PlaceablePlant&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="255" y="510" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-12" target="S-8L2TnkPDTa_hdI_DOx-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-12" value="Plant needs Water&lt;br&gt;State: NeedsWater" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-13" target="S-8L2TnkPDTa_hdI_DOx-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-13" value="WorkerStation sends Worker to water plant" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-14" target="S-8L2TnkPDTa_hdI_DOx-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-14" value="Worker moves to plant" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="420" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-15" target="S-8L2TnkPDTa_hdI_DOx-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-15" value="Worker interacts with Plant&lt;br&gt;Action: Water" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-16" target="S-8L2TnkPDTa_hdI_DOx-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-16" value="Plant starts final growing&lt;br&gt;State: FinalGrow" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-17" target="S-8L2TnkPDTa_hdI_DOx-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-17" value="Plant is fully grown&lt;br&gt;State: FullyGrown" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-18" target="S-8L2TnkPDTa_hdI_DOx-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-18" value="WorkerStation sends Worker to harvest plant" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-19" target="S-8L2TnkPDTa_hdI_DOx-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-19" value="Worker moves to plant" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="420" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-20" target="S-8L2TnkPDTa_hdI_DOx-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-20" value="Worker interacts with Plant&lt;br&gt;Action: Harvest" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-33" value="&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;General Gamecycle&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="410" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="S-8L2TnkPDTa_hdI_DOx-34" target="S-8L2TnkPDTa_hdI_DOx-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="820" />
+              <mxPoint x="30" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-34" value="Player earns money" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-37" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Controllers&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="45" y="860" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-38" value="DragDropController" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-39" value="GameController" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="295" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-40" value="Implements the Drag &amp;amp; Drop Action" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="65" y="970" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-41" value="Controls the state of the game&lt;br&gt;Responsibilities: Game start, and Check&lt;br&gt;for GameOver and Win" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="970" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-42" value="GameInitializer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-43" value="The initial starting point of the Game&lt;br&gt;This should be called first when &lt;br&gt;entering the Game scene (not menu!)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="970" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-44" value="GameContext" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-45" value="Contains the GameController&lt;br&gt;The current Money state&lt;br&gt;A list of PlaceablePlants&lt;br&gt;A list of placed Plants" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="735" y="970" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-46" value="MenuUiController" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="294" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-47" value="Controls the Menu UI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="285" y="1110" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-48" value="GameUiController" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-8L2TnkPDTa_hdI_DOx-49" value="Controls the Game UI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="515" y="1110" width="130" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
